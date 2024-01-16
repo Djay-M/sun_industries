@@ -110,7 +110,7 @@ function NavBar(props) {
           className={
             !state.navbarOpen
               ? "hidden"
-              : "absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center gap-5"
+              : "bg-[#65cff6] absolute top-20 left-0 w-full h-[500px] flex flex-col justify-center items-center gap-5"
           }
         >
           {fetchLinkButton("Home", "home", true)}
@@ -120,7 +120,18 @@ function NavBar(props) {
           {fetchLinkButton("Events", "events", true)}
           {fetchLinkButton("Contact", "contact", true)}
           <button className="ml-5 p-3 bg-white rounded-md hover:bg-black hover:text-white">
-            Get A Quote
+            <Link
+              id="homeButton"
+              value="quote"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={900}
+              onClick={handleNavbarClick}
+            >
+              Get A Quote
+            </Link>
           </button>
         </div>
       </div>
