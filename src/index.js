@@ -22,7 +22,7 @@ root.render(
       <About />
       <Testimonial />
       <Contact />
-      <Products />
+      {/* <Products /> */}
     </div>
   </React.StrictMode>
 );
