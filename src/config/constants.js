@@ -1,6 +1,6 @@
 export const localTimeZone = "Asia/Kolkata";
 export const defaultTheme = "light";
-export const underLineColor = "#facf0f"; // #7843e9
+export const underLineColor = "#facf0f";
 export const linkedInProfile =
   "https://www.linkedin.com/in/dhananjaya-mulukaledu/";
 export const githubProfile = "https://github.com/Djay-M";
@@ -11,13 +11,13 @@ export const themesConfig = {
   hoverTextColor: "blue",
   dark: {
     backgroundImage: "darkBackGround",
-    backgroundColor: `#1A1A1D`, //`#1A1A1D`, //`#282828`, //`#282c34`,
+    backgroundColor: `#1A1A1D`,
     navBarBackgroundColor: `#0a192f`,
     textColor: "white",
   },
   light: {
     backgroundImage: "lightBackGround",
-    backgroundColor: "#282c34", //`#fff`,
+    backgroundColor: "#282c34",
     navBarBackgroundColor: `#0a192f`,
     textColor: "black",
   },
@@ -27,20 +27,17 @@ function importAll(r) {
   return r.keys().map(r);
 }
 
-export const serviceImages = [];
-// importAll(
-//   require.context("../assets/service_images", false, /\.(png|jpe?g|svg)$/)
-// );
+export const serviceImages = importAll(
+  require.context("../assets/service_images", false, /\.(png|jpe?g|svg)$/)
+);
 
-export const founderImages = [];
-// importAll(
-//   require.context("../assets/profile_photo", false, /\.(png|jpe?g|svg)$/)
-// );
+export const founderImages = importAll(
+  require.context("../assets/profile_photo", false, /\.(png|jpe?g|svg)$/)
+);
 
-export const slides = [];
-// importAll(
-//   require.context("../assets/slides", false, /\.(png|jpe?g|svg)$/)
-// );
+export const slides = importAll(
+  require.context("../assets/slides", false, /\.(png|jpe?g|svg)$/)
+);
 
 export const serviceCardsData = [
   {

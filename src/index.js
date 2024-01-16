@@ -9,19 +9,19 @@ import Services from "./pages/Services";
 import Testimonial from "./pages/Testimonial";
 import HomeArrow from "./components/HomeArrow";
 import Contact from "./pages/Contact";
-import Products from "./pages/Products";
+// import Products from "./pages/Products";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div className="">
       <NavBar />
-      {/* <HomeArrow />
+      <HomeArrow />
       <Home />
       <Services />
       <About />
       <Testimonial />
-      <Contact /> */}
+      <Contact />
       {/* <Products /> */}
     </div>
   </React.StrictMode>
