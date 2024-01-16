@@ -27,17 +27,20 @@ function importAll(r) {
   return r.keys().map(r);
 }
 
-export const serviceImages = importAll(
-  require.context("../assets/service_images", false, /\.(png|jpe?g|svg)$/)
-);
+export const serviceImages = [];
+// importAll(
+//   require.context("../assets/service_images", false, /\.(png|jpe?g|svg)$/)
+// );
 
-export const founderImages = importAll(
-  require.context("../assets/profile_photo", false, /\.(png|jpe?g|svg)$/)
-);
+export const founderImages = [];
+// importAll(
+//   require.context("../assets/profile_photo", false, /\.(png|jpe?g|svg)$/)
+// );
 
-export const slides = importAll(
-  require.context("../assets/slides", false, /\.(png|jpe?g|svg)$/)
-);
+export const slides = [];
+// importAll(
+//   require.context("../assets/slides", false, /\.(png|jpe?g|svg)$/)
+// );
 
 export const serviceCardsData = [
   {
