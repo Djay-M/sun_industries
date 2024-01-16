@@ -16,12 +16,12 @@ root.render(
   <React.StrictMode>
     <div className="">
       <NavBar />
-      <HomeArrow />
+      {/* <HomeArrow />
       <Home />
       <Services />
       <About />
       <Testimonial />
-      <Contact />
+      <Contact /> */}
       {/* <Products /> */}
     </div>
   </React.StrictMode>
