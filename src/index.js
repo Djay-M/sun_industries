@@ -9,7 +9,7 @@ import Services from "./pages/Services";
 import Testimonial from "./pages/Testimonial";
 import HomeArrow from "./components/HomeArrow";
 import Contact from "./pages/Contact";
-// import Products from "./pages/Products";
+import Products from "./pages/Products";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,7 +22,7 @@ root.render(
       <About />
       <Testimonial />
       <Contact />
-      {/* <Products /> */}
+      <Products />
     </div>
   </React.StrictMode>
 );
