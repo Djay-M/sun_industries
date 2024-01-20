@@ -5,7 +5,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 
 function Contact() {
   return (
-    <div id="contact" className="w-full h-full sm:h-screen mt-10">
+    <div id="contact" className="w-full h-full mt-10">
       <div className="w-screen h-[400px] bg-blue-900 text-white grid justify-center items-center">
         <div className="w-full grid gap-5">
           <p className="text-6xl font-bold">Contact</p>

@@ -32,7 +32,7 @@ function Testimonial() {
 
   return (
     <div>
-      <div className="w-full h-full sm:h-screen grid justify-center">
+      <div className="w-full h-full grid grid-rows-1 sm:grid-rows-2 justify-center">
         <div className="w-full bg-black">
           <div className="font-serif font-normal leading-9 text-[#fa5f0b] text-4xl flex justify-center mt-16">
             Testimonial
@@ -40,7 +40,7 @@ function Testimonial() {
           <div className="font-serif font-normal leading-9 text-white text-4xl flex justify-center ml-5 mt-5">
             What Our Clients Say ABout Us
           </div>
-          <div className="mt-20 h-[400px]">
+          <div className="mt-20">
             <Carousel cards={reviewCards()} autoSlide={true} />
           </div>
         </div>
@@ -50,7 +50,7 @@ function Testimonial() {
               OUR CLIENTS
             </span>
           </div>
-          <div className=" sm:h-[250px] bg-white grid grid-flow-col-1 sm:grid-flow-col justify-center items-center gap-20">
+          <div className="sm:h-[250px] bg-white grid grid-flow-col-1 sm:grid-flow-col justify-center items-center gap-20">
             {clientLogos()}
           </div>
         </div>

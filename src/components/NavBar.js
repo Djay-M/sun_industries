@@ -22,7 +22,7 @@ function NavBar(props) {
   const fetchLinkButton = (LinkName, linkTo, ismobileView) => {
     return (
       <Link
-        className="text-xl hover:scale-150 duration-300 ml-5"
+        className="text-xl hover:scale-150 duration-300 ml-5 hover:cursor-pointer"
         id="homeButton"
         value="home"
         to={linkTo}
