@@ -82,9 +82,7 @@ function NavBar(props) {
             {fetchLinkButton("Contact", "contact")}
           </div>
           <div className="flex items-center">
-            {/* <button
-              className="mr-10 p-3 bg-white rounded-md hover:bg-black hover:text-white"
-            >
+            <button className=" hidden mr-10 p-3 bg-white rounded-md hover:bg-black hover:text-white">
               <Link
                 id="homeButton"
                 value="quote"
@@ -96,14 +94,14 @@ function NavBar(props) {
               >
                 Get A Quote
               </Link>
-            </button> */}
+            </button>
           </div>
         </div>
         <div className="md:hidden m-10" onClick={handleNavbarClick}>
           {!state.navbarOpen ? (
-            <FaBars color={`${textColor}`} />
+            <FaBars color={`${textColor}`} size={27} />
           ) : (
-            <FaTimes color={`${textColor}`} />
+            <FaTimes color={`${textColor}`} size={27} />
           )}
         </div>
         {/* Mobile View */}
@@ -119,7 +117,7 @@ function NavBar(props) {
           {fetchLinkButton("Products", "products", true)}
           {fetchLinkButton("Our Projects", "products", true)}
           {fetchLinkButton("Contact", "contact", true)}
-          {/* <button className="ml-5 p-3 bg-white rounded-md hover:bg-black hover:text-white">
+          <button className="hidden ml-5 p-3 bg-white rounded-md hover:bg-black hover:text-white">
             <Link
               id="homeButton"
               value="quote"
@@ -132,7 +130,7 @@ function NavBar(props) {
             >
               Get A Quote
             </Link>
-          </button> */}
+          </button>
         </div>
       </div>
     </div>
