@@ -7,6 +7,10 @@ export const githubProfile = "https://github.com/Djay-M";
 export const getformLink =
   "https://getform.io/f/bab29933-25ed-48df-90ae-e9bdc2ab2f8a";
 
+export const fonts = {
+  roboto: ["Roboto", "sans-serif"],
+};
+
 export const themesConfig = {
   hoverTextColor: "blue",
   dark: {

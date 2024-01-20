@@ -10,19 +10,21 @@ import Testimonial from "./pages/Testimonial";
 import HomeArrow from "./components/HomeArrow";
 import Contact from "./pages/Contact";
 import Products from "./pages/Products";
+import Footer from "./components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div className="">
+    <div className="overflow-x-hidden bg-[#063970] text-white font-roboto">
       <NavBar />
       <HomeArrow />
       <Home />
       <Services />
       <About />
+      <Products />
       <Testimonial />
       <Contact />
-      <Products />
+      <Footer />
     </div>
   </React.StrictMode>
 );

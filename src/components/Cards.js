@@ -7,7 +7,9 @@ function Cards(props) {
       <div className="rounded-t-xl flex justify-center items-center">
         <img src={imageUrl} alt="#" className="h-80 w-80 rounded-3xl "></img>
       </div>
-      <span className="text-xl mt-5 font-semibold">{name}</span>
+      <span className="text-xl mt-5 font-semibold text-[#063970] ml-5">
+        {name}
+      </span>
     </div>
   );
 }

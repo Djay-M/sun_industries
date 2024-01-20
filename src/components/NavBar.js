@@ -22,13 +22,13 @@ function NavBar(props) {
   const fetchLinkButton = (LinkName, linkTo, ismobileView) => {
     return (
       <Link
-        className="text-xl hover:scale-150 duration-300 ml-5 hover:cursor-pointer"
+        className="text-3xl hover:scale-125 duration-300 ml-5 hover:cursor-pointer font-roboto"
         id="homeButton"
         value="home"
         to={linkTo}
         spy={true}
         smooth={true}
-        offset={0}
+        offset={ismobileView ? -30 : 0}
         duration={900}
         onClick={ismobileView ? handleNavbarClick : ""}
       >
@@ -65,25 +65,26 @@ function NavBar(props) {
         </div>
       </div>
       {/* NAV BAR */}
-      <div className="w-full h-[100px] flex justify-between items-center bg-gradient-to-r  from-white to-[#06b8f8] px-4">
+      <div className="w-full h-[100px] flex justify-between items-center bg-blue-900 px-4">
         <div className="">
           <img
-            className="h-[50px] mr-6 md:h-[90px] md:ml-30"
+            className="h-[50px] mr-6 md:h-[90px] md:ml-30 rounded-lg"
             src={companyLogo}
             alt="Sun Industries"
           ></img>
         </div>
-        <div className="hidden w-[70%] rounded-md p-1 md:p-3 md:flex justify-between items-center md:mr-3">
-          <div className="md:flex justify-between items-center gap-5">
+        <div className="hidden w-[70%] rounded-md p-1 md:p-3 md:flex justify-center items-center md:mr-3">
+          <div className="md:flex justify-between items-center gap-10">
             {fetchLinkButton("Home", "home")}
             {fetchLinkButton("About", "about")}
             {fetchLinkButton("Products", "products")}
-            {fetchLinkButton("Our Projects", "projects")}
-            {fetchLinkButton("Events", "events")}
+            {fetchLinkButton("Our Projects", "products")}
             {fetchLinkButton("Contact", "contact")}
           </div>
           <div className="flex items-center">
-            <button className="mr-10 p-3 bg-white rounded-md hover:bg-black hover:text-white">
+            {/* <button
+              className="mr-10 p-3 bg-white rounded-md hover:bg-black hover:text-white"
+            >
               <Link
                 id="homeButton"
                 value="quote"
@@ -95,7 +96,7 @@ function NavBar(props) {
               >
                 Get A Quote
               </Link>
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="md:hidden m-10" onClick={handleNavbarClick}>
@@ -110,16 +111,15 @@ function NavBar(props) {
           className={
             !state.navbarOpen
               ? "hidden"
-              : "bg-[#65cff6] absolute top-20 left-0 w-full h-[500px] flex flex-col justify-center items-center gap-5"
+              : "bg-[#063970] absolute top-20 left-0 w-full h-[500px] flex flex-col justify-center items-center gap-5"
           }
         >
           {fetchLinkButton("Home", "home", true)}
           {fetchLinkButton("About", "about", true)}
           {fetchLinkButton("Products", "products", true)}
-          {fetchLinkButton("Our Projects", "projects", true)}
-          {fetchLinkButton("Events", "events", true)}
+          {fetchLinkButton("Our Projects", "products", true)}
           {fetchLinkButton("Contact", "contact", true)}
-          <button className="ml-5 p-3 bg-white rounded-md hover:bg-black hover:text-white">
+          {/* <button className="ml-5 p-3 bg-white rounded-md hover:bg-black hover:text-white">
             <Link
               id="homeButton"
               value="quote"
@@ -132,7 +132,7 @@ function NavBar(props) {
             >
               Get A Quote
             </Link>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
