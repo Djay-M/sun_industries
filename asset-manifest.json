@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sun_industries/static/css/main.8ba03982.css",
-    "main.js": "/sun_industries/static/js/main.6caa7e3d.js",
+    "main.css": "/sun_industries/static/css/main.ac62c3f0.css",
+    "main.js": "/sun_industries/static/js/main.3bf2f487.js",
     "static/js/787.3d15d62d.chunk.js": "/sun_industries/static/js/787.3d15d62d.chunk.js",
     "static/media/image_12.jpeg": "/sun_industries/static/media/image_12.1193ff62ecd356881610.jpeg",
     "static/media/image3.jpeg": "/sun_industries/static/media/image3.a53aafd32459c02fb5a9.jpeg",
@@ -75,12 +75,12 @@
     "static/media/bosch-logo.png": "/sun_industries/static/media/bosch-logo.2577c50f153f54c6bb35.png",
     "static/media/image72.jpeg": "/sun_industries/static/media/image72.f154d45a6395dda26856.jpeg",
     "index.html": "/sun_industries/index.html",
-    "main.8ba03982.css.map": "/sun_industries/static/css/main.8ba03982.css.map",
-    "main.6caa7e3d.js.map": "/sun_industries/static/js/main.6caa7e3d.js.map",
+    "main.ac62c3f0.css.map": "/sun_industries/static/css/main.ac62c3f0.css.map",
+    "main.3bf2f487.js.map": "/sun_industries/static/js/main.3bf2f487.js.map",
     "787.3d15d62d.chunk.js.map": "/sun_industries/static/js/787.3d15d62d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ba03982.css",
-    "static/js/main.6caa7e3d.js"
+    "static/css/main.ac62c3f0.css",
+    "static/js/main.3bf2f487.js"
   ]
 }
