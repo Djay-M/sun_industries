@@ -73,7 +73,7 @@ function NavBar(props) {
             alt="Sun Industries"
           ></img>
         </div>
-        <div className="hidden w-[70%] rounded-md p-1 md:p-3 md:flex justify-center items-center md:mr-3">
+        <div className="hidden w-[70%] rounded-md p-1 md:p-3 lg:flex justify-center items-center md:mr-3">
           <div className="md:flex justify-between items-center gap-10">
             {fetchLinkButton("Home", "home")}
             {fetchLinkButton("About", "about")}
@@ -82,7 +82,7 @@ function NavBar(props) {
             {fetchLinkButton("Contact", "contact")}
           </div>
           <div className="flex items-center">
-            <button className=" hidden mr-10 p-3 bg-white rounded-md hover:bg-black hover:text-white">
+            <button className="hidden mr-10 p-3 bg-white rounded-md hover:bg-black hover:text-white">
               <Link
                 id="homeButton"
                 value="quote"
@@ -97,7 +97,7 @@ function NavBar(props) {
             </button>
           </div>
         </div>
-        <div className="md:hidden m-10" onClick={handleNavbarClick}>
+        <div className="lg:hidden m-10" onClick={handleNavbarClick}>
           {!state.navbarOpen ? (
             <FaBars color={`${textColor}`} size={27} />
           ) : (
