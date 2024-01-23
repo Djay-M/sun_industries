@@ -1,16 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { defaultTheme, themesConfig } from "../config/constants";
-import {
-  FaBars,
-  FaTimes,
-  FaFacebook,
-  FaTwitter,
-  FaPinterest,
-  FaLinkedin,
-} from "react-icons/fa";
-import { CiMail, CiPhone } from "react-icons/ci";
-import companyLogo from "../assets/company_logo.jpeg";
+import { FaBars, FaTimes, FaFacebook, FaTwitter } from "react-icons/fa";
+import { CgMail } from "react-icons/cg";
 
 function NavBar(props) {
   let theme = defaultTheme;
@@ -22,7 +14,7 @@ function NavBar(props) {
   const fetchLinkButton = (LinkName, linkTo, ismobileView) => {
     return (
       <Link
-        className="text-3xl hover:scale-125 duration-300 ml-5 hover:cursor-pointer font-roboto"
+        className="text-3xl hover:scale-125 duration-300 ml-5 hover:cursor-pointer hover:text-textSecondary font-roboto"
         id="homeButton"
         value="home"
         to={linkTo}
@@ -42,39 +34,17 @@ function NavBar(props) {
 
   return (
     <div className="w-full fixed z-10">
-      {/* TOP INFO BAR */}
-      <div className="hidden lg:flex w-full h-[40px] bg-black justify-between text-white items-center">
-        <div className="ml-10 flex flex-row justify-center gap-5">
-          <p>Welcom to Sun Industries</p>
-          <div className="flex flex-row">
-            <CiMail size={25} />
-            <p className="ml-1">sunindustries.ga@gmail.com</p>
-          </div>
-          <div className="flex flex-row">
-            <CiPhone size={25} />
-            <p className="ml-1">+91 9845817634</p>
-          </div>
-        </div>
-        <div className="ml-10 flex flex-row justify-center gap-5">
-          <div className="mr-20 flex flex-row gap-10">
-            <FaFacebook />
-            <FaTwitter />
-            <FaPinterest />
-            <FaLinkedin />
-          </div>
-        </div>
-      </div>
       {/* NAV BAR */}
-      <div className="w-full h-[100px] flex justify-between items-center bg-blue-900 px-4">
+      <div className="w-full h-[100px] flex justify-between items-center bg-backgroundNavbar text-textNavbar px-4 bg-transparent">
         <div className="">
-          <img
+          {/* <img
             className="h-[50px] mr-6 md:h-[90px] md:ml-30 rounded-lg"
             src={companyLogo}
             alt="Sun Industries"
-          ></img>
+          ></img> */}
         </div>
         <div className="hidden w-[70%] rounded-md p-1 md:p-3 lg:flex justify-center items-center md:mr-3">
-          <div className="md:flex justify-between items-center gap-10">
+          <div className="md:flex justify-between items-center gap-10 mr-20">
             {fetchLinkButton("Home", "home")}
             {fetchLinkButton("About", "about")}
             {fetchLinkButton("Products", "products")}
@@ -82,7 +52,7 @@ function NavBar(props) {
             {fetchLinkButton("Contact", "contact")}
           </div>
           <div className="flex items-center">
-            <button className="hidden mr-10 p-3 bg-white rounded-md hover:bg-black hover:text-white">
+            <button className="hidden mr-10 p-3 bg-white rounded-md hover:bg-black hover:text-textPrimary">
               <Link
                 id="homeButton"
                 value="quote"
@@ -95,6 +65,20 @@ function NavBar(props) {
                 Get A Quote
               </Link>
             </button>
+          </div>
+          <div className="hidden lg:flex justify-end gap-10 ml-10">
+            <FaFacebook
+              size={30}
+              className="hover:scale-150 duration-300 hover:cursor-pointer hover:text-textSecondary"
+            />
+            <FaTwitter
+              size={30}
+              className="hover:scale-150 duration-300 hover:cursor-pointer hover:text-textSecondary"
+            />
+            <CgMail
+              size={30}
+              className="hover:scale-150 duration-300 hover:cursor-pointer hover:text-textSecondary"
+            />
           </div>
         </div>
         <div className="lg:hidden m-10" onClick={handleNavbarClick}>
@@ -117,7 +101,7 @@ function NavBar(props) {
           {fetchLinkButton("Products", "products", true)}
           {fetchLinkButton("Our Projects", "products", true)}
           {fetchLinkButton("Contact", "contact", true)}
-          <button className="hidden ml-5 p-3 bg-white rounded-md hover:bg-black hover:text-white">
+          <button className="hidden ml-5 p-3 bg-white rounded-md hover:bg-black hover:text-textPrimary">
             <Link
               id="homeButton"
               value="quote"

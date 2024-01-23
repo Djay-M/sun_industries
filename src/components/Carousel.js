@@ -81,10 +81,10 @@ function Carousel(props) {
           className="w-full h-full sm:mt-8 rounded-2xl bg-center bg-cover transition-shadow  duration-300 ease-in-out"
         ></div>
       )}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-textPrimary cursor-pointer">
         <BsChevronCompactLeft size={30} onClick={handlePrevSlide} />
       </div>
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-textPrimary cursor-pointer">
         <BsChevronCompactRight size={30} onClick={handleNextSlide} />
       </div>
     </div>

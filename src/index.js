@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div className="overflow-x-hidden bg-[#063970] text-white font-roboto">
+    <div className="overflow-x-hidden bg-backgroundPrimary text-textPrimary font-roboto">
       <NavBar />
       <HomeArrow />
       <Home />

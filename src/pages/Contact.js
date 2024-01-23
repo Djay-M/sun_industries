@@ -6,7 +6,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 function Contact() {
   return (
     <div id="contact" className="w-full h-screen mt-5">
-      <div className="w-screen h-[150px] bg-blue-900 text-white grid justify-center items-center">
+      <div className="w-screen h-[150px] bg-backgroundSecondaryNavbar text-textPrimary grid justify-center items-center">
         <div className="w-full grid">
           <p className="text-6xl font-bold">Contact</p>
         </div>
@@ -68,7 +68,7 @@ function Contact() {
                 placeholder="Message"
               ></textarea>
             </div>
-            <button className="bg-[#ff0000] p-2 text-white font-bold">
+            <button className="bg-[#ff0000] p-2 text-textPrimary font-bold">
               Submit
             </button>
           </form>

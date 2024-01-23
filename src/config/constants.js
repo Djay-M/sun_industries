@@ -15,14 +15,14 @@ export const themesConfig = {
   hoverTextColor: "blue",
   dark: {
     backgroundImage: "darkBackGround",
-    backgroundColor: `#1A1A1D`,
-    navBarBackgroundColor: `#0a192f`,
+    backgroundPrimary: `#1A1A1D`,
+    navBarbackgroundPrimary: `#0a192f`,
     textColor: "white",
   },
   light: {
     backgroundImage: "lightBackGround",
-    backgroundColor: "#282c34",
-    navBarBackgroundColor: `#0a192f`,
+    backgroundPrimary: "#282c34",
+    navBarbackgroundPrimary: `#0a192f`,
     textColor: "black",
   },
 };
@@ -41,6 +41,10 @@ export const founderImages = importAll(
 
 export const slides = importAll(
   require.context("../assets/slides", false, /\.(png|jpe?g|svg)$/)
+);
+
+export const backgroundImage = importAll(
+  require.context("../assets/backgroundImages", false, /\.(png|jpe?g|svg)$/)
 );
 
 export const serviceCardsData = [

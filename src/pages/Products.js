@@ -36,7 +36,7 @@ function Products() {
   return (
     <div id="products">
       <div className="w-full h-full">
-        <div className="w-full h-[150px] bg-blue-900 text-white grid justify-center items-center">
+        <div className="w-full h-[150px] bg-backgroundSecondaryNavbar text-textPrimary grid justify-center items-center">
           <div className="w-full grid gap-5">
             <p className="text-6xl font-bold">Products</p>
           </div>
