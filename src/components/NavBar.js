@@ -43,7 +43,7 @@ function NavBar(props) {
   return (
     <div className="w-full fixed z-10">
       {/* TOP INFO BAR */}
-      <div className="hidden md:flex w-full h-[40px] bg-black justify-between text-white items-center">
+      <div className="hidden lg:flex w-full h-[40px] bg-black justify-between text-white items-center">
         <div className="ml-10 flex flex-row justify-center gap-5">
           <p>Welcom to Sun Industries</p>
           <div className="flex flex-row">
