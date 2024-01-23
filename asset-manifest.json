@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sun_industries/static/css/main.8032ce51.css",
-    "main.js": "/sun_industries/static/js/main.61714152.js",
+    "main.css": "/sun_industries/static/css/main.457100c3.css",
+    "main.js": "/sun_industries/static/js/main.2df258c0.js",
     "static/js/787.3d15d62d.chunk.js": "/sun_industries/static/js/787.3d15d62d.chunk.js",
     "static/media/image_12.jpeg": "/sun_industries/static/media/image_12.1193ff62ecd356881610.jpeg",
     "static/media/image3.jpeg": "/sun_industries/static/media/image3.a53aafd32459c02fb5a9.jpeg",
@@ -28,6 +28,7 @@
     "static/media/image7.jpeg": "/sun_industries/static/media/image7.9e67ab6a9c8bc605f121.jpeg",
     "static/media/image_13.jpeg": "/sun_industries/static/media/image_13.4ac43a20cb2cb95eec58.jpeg",
     "static/media/image19.jpeg": "/sun_industries/static/media/image19.ddc96b7d4a2e327ef20c.jpeg",
+    "static/media/fabricationwork.jpeg": "/sun_industries/static/media/fabricationwork.16ee68011fe566fe79eb.jpeg",
     "static/media/image55.jpeg": "/sun_industries/static/media/image55.5dd399372d0ab67cda23.jpeg",
     "static/media/image30.jpeg": "/sun_industries/static/media/image30.72b57a7840eea8aa36b6.jpeg",
     "static/media/image_21.jpeg": "/sun_industries/static/media/image_21.8f0d7b9c46109f4c451e.jpeg",
@@ -68,19 +69,18 @@
     "static/media/image28.jpeg": "/sun_industries/static/media/image28.7cba6464e26785444060.jpeg",
     "static/media/image27.jpeg": "/sun_industries/static/media/image27.027ed50fc32c2b031544.jpeg",
     "static/media/image75.jpeg": "/sun_industries/static/media/image75.34dc63985208a8fa35be.jpeg",
-    "static/media/company_logo.jpeg": "/sun_industries/static/media/company_logo.7aee693d65677d09f2da.jpeg",
     "static/media/image29.jpeg": "/sun_industries/static/media/image29.ea517f4b82c29b87c6ab.jpeg",
     "static/media/founder_1.jpeg": "/sun_industries/static/media/founder_1.f50f8e01acb99aa7f59f.jpeg",
     "static/media/image71.jpeg": "/sun_industries/static/media/image71.455b976699861daf4af1.jpeg",
     "static/media/bosch-logo.png": "/sun_industries/static/media/bosch-logo.2577c50f153f54c6bb35.png",
     "static/media/image72.jpeg": "/sun_industries/static/media/image72.f154d45a6395dda26856.jpeg",
     "index.html": "/sun_industries/index.html",
-    "main.8032ce51.css.map": "/sun_industries/static/css/main.8032ce51.css.map",
-    "main.61714152.js.map": "/sun_industries/static/js/main.61714152.js.map",
+    "main.457100c3.css.map": "/sun_industries/static/css/main.457100c3.css.map",
+    "main.2df258c0.js.map": "/sun_industries/static/js/main.2df258c0.js.map",
     "787.3d15d62d.chunk.js.map": "/sun_industries/static/js/787.3d15d62d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8032ce51.css",
-    "static/js/main.61714152.js"
+    "static/css/main.457100c3.css",
+    "static/js/main.2df258c0.js"
   ]
 }
