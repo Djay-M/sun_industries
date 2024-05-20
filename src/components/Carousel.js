@@ -74,12 +74,9 @@ function Carousel(props) {
           <div className="sm:hidden">{cards[currentCardIndexes[0]]}</div>
         </div>
       ) : (
-        <div
-          style={{
-            backgroundImage: `url(${slideImages[currentSlideIndex]})`,
-          }}
-          className="w-full h-full sm:mt-8 rounded-2xl bg-center bg-cover transition-shadow  duration-300 ease-in-out"
-        ></div>
+        <div className="w-full h-full lg:h-screen sm:mt-8 rounded-2xl transition-shadow  duration-300 ease-in-out">
+          {slideImages[currentSlideIndex]}
+        </div>
       )}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-textPrimary cursor-pointer">
         <BsChevronCompactLeft size={30} onClick={handlePrevSlide} />

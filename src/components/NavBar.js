@@ -21,7 +21,7 @@ function NavBar(props) {
         to={linkTo}
         spy={true}
         smooth={true}
-        offset={ismobileView ? -30 : 0}
+        offset={ismobileView ? -60 : -100}
         duration={900}
         onClick={ismobileView ? handleNavbarClick : ""}
       >
@@ -36,7 +36,7 @@ function NavBar(props) {
   return (
     <div className="w-full fixed z-10">
       {/* NAV BAR */}
-      <div className="w-full h-[100px] flex justify-between items-center bg-backgroundNavbar text-textNavbar px-4 bg-transparent">
+      <div className="w-full h-[100px] flex justify-between items-center bg-backgroundNavbar text-textNavbar px-4">
         <div className="hidden lg:block">
           <img
             className="h-[50px] w-[250px] mr-6 md:h-[90px] md:ml-30 rounded-lg"

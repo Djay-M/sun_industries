@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         backgroundPrimary: "#222c35", //"#063970",
         backgroundSecondary: "#1b232a", // "bg-blue-900"
-        backgroundNavbar: "white",
+        backgroundNavbar: "#222c35",
         backgroundSecondaryNavbar: "#f9a34f",
         textPrimary: "white",
         textSecondary: "#ff9636",

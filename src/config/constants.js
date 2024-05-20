@@ -43,6 +43,10 @@ export const slides = importAll(
   require.context("../assets/slides", false, /\.(png|jpe?g|svg)$/)
 );
 
+export const homePageSlides = importAll(
+  require.context("../assets/homepage_slides", false, /\.(png|jpe?g|svg)$/)
+);
+
 export const backgroundImage = importAll(
   require.context("../assets/backgroundImages", false, /\.(png|jpe?g|svg)$/)
 );
@@ -67,6 +71,25 @@ export const serviceCardsData = [
   {
     name: "High and low density Plastic and elastic  components",
     imageUrl: serviceImages[4],
+  },
+];
+
+export const homePageData = [
+  {
+    name: "Sun Industries, Building Dreams",
+    imageUrl: homePageSlides[0],
+  },
+  {
+    name: "Craftsmanship Built To Scale",
+    imageUrl: homePageSlides[1],
+  },
+  {
+    name: "Dream It! We Can Build!",
+    imageUrl: homePageSlides[2],
+  },
+  {
+    name: "We Complete Projects In Time",
+    imageUrl: homePageSlides[3],
   },
 ];
 
