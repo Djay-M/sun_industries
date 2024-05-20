@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { defaultTheme, themesConfig } from "../config/constants";
 import { FaBars, FaTimes, FaFacebook, FaTwitter } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
+import companyLogo from "../assets/companyLogo1.jpg";
 
 function NavBar(props) {
   let theme = defaultTheme;
@@ -36,12 +37,12 @@ function NavBar(props) {
     <div className="w-full fixed z-10">
       {/* NAV BAR */}
       <div className="w-full h-[100px] flex justify-between items-center bg-backgroundNavbar text-textNavbar px-4 bg-transparent">
-        <div className="">
-          {/* <img
-            className="h-[50px] mr-6 md:h-[90px] md:ml-30 rounded-lg"
+        <div className="hidden lg:block">
+          <img
+            className="h-[50px] w-[250px] mr-6 md:h-[90px] md:ml-30 rounded-lg"
             src={companyLogo}
             alt="Sun Industries"
-          ></img> */}
+          ></img>
         </div>
         <div className="hidden w-[70%] rounded-md p-1 md:p-3 lg:flex justify-center items-center md:mr-3">
           <div className="md:flex justify-between items-center gap-10 mr-20">
